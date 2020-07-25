@@ -133,7 +133,7 @@ const Dropzone = () => {
         for (let i = 0; i < validFiles.length; i++) {
             const formData = new FormData();
             formData.append('image', validFiles[i]);
-            formData.append('key', '638938ef024e80a8c24baa6d42cae8ee');
+            formData.append('key', '');
 
             axios.post('https://api.imgbb.com/1/upload', formData, {
                 onUploadProgress: (progressEvent) => {
